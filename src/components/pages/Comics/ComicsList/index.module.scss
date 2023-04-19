@@ -1,0 +1,14 @@
+@import '@scss/variables';
+
+.container {
+	@include flexPreset(center, flex-start, column);
+	width: 100%;
+	height: 100%;
+	gap: 3rem;
+
+	.list {
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+}

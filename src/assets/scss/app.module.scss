@@ -1,0 +1,8 @@
+@import '@scss/variables';
+
+.container {
+	@include flexPreset(center, flex-start, column);
+	position: relative;
+	width: 100%;
+	height: auto;
+}

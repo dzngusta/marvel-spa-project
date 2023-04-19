@@ -1,0 +1,28 @@
+@import '@scss/variables';
+
+.container {
+	@include flexPreset(flex-start, flex-start, column);
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	margin: 1rem 1rem 0 0;
+	gap: 1rem;
+
+	h1 {
+		@include textPreset(1.4rem, $white-100, $montserratBold, inital, 100%, 0.1rem);
+	}
+
+	p {
+		@include textPreset(1.2rem, $white-100, $montserratBold, inital, 130%, 0.1rem);
+		max-width: 30rem;
+	}
+
+	&.success {
+		background-color: $success-500;
+	}
+
+	&.error {
+		background-color: $error-500;
+	}
+}

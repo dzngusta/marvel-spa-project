@@ -1,0 +1,54 @@
+@import 'fonts';
+@import 'mixin';
+
+//colors
+$white-100: #ffffff;
+$white-200: #fcfcfc;
+$white-300: #f7f7f7;
+$white-400: #f0f0f0;
+$white-500: #eeeeee;
+$white-600: #e5e5e5;
+$white-700: #d7d7d7;
+$white-900: #c7c7c7;
+
+$gray-700: #606060;
+$gray-800: #858585;
+$gray-900: #a7a7a7;
+
+$dark-300: #0a0a0a;
+$dark-400: #101010;
+$dark-500: #151515;
+$dark-600: #202020;
+$dark-700: #353535;
+$dark-800: #454545;
+$dark-900: #555555;
+
+$bg-100: #000000cc;
+$bg-500: #05050580;
+$bg-900: #00000050;
+
+$green-100: #009b67;
+$green-200: #009b67;
+$green-300: #009b67;
+
+$yellow-300: #ffdb1c;
+
+$success-500: #0ecc5d;
+$error-500: #ff3a5b;
+$alert-500: #e8af1c;
+$info-500: #148bec;
+
+$marvel-red: #ef1442;
+$marvel-blue: #377fec;
+
+$gradient-green-100: linear-gradient(179.69deg, #00ab72 0%, #009e65 100.83%);
+
+//fonts
+$montserratRegular: 'Montserrat Regular';
+$montserratMedium: 'Montserrat Medium';
+$montserratSemiBold: 'Montserrat SemiBold';
+$montserratBold: 'Montserrat Bold';
+$montserratExtraBold: 'Montserrat ExtraBold';
+$montserratBlack: 'Montserrat Black';
+
+$comicFont: 'Comic Neue';

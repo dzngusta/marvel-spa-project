@@ -1,0 +1,100 @@
+@mixin flexPreset($align, $justify, $direction) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin gridPreset($align, $justify, $direction) {
+  display: grid;
+  align-items: $align;
+  justify-content: $justify;
+  grid-auto-flow: $direction;
+}
+
+@mixin textPreset($size, $color, $family, $weight, $height, $spacing) {
+  color: $color;
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin textGradient($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@mixin borderPreset($size, $type, $color, $radius: 0rem) {
+  border: $size $type $color;
+  border-radius: $radius;
+}
+
+@mixin backgroundPreset($color, $radius: 0rem) {
+  background: $color;
+  border-radius: $radius;
+}
+
+@mixin hoverPreset($scale, $time, $light: 1) {
+  &:hover {
+    transform: scale($scale);
+    transition: all $time;
+    cursor: pointer;
+    filter: brightness($light);
+  }
+}
+
+@mixin isActive {
+  transition: all 0.5s;
+  transform: scale(1.03);
+  cursor: default;
+}
+
+@mixin resetInput {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@mixin scrollPreset($width) {
+  //width
+  &::-webkit-scrollbar {
+    width: $width;
+    background: $whiteFade;
+  }
+
+  //handler
+  &::-webkit-scrollbar-thumb {
+    background: $colorLight;
+    border-radius: 1rem;
+    border: 0.5rem solid $darkFade;
+
+    &:hover {
+      background: $colorLight;
+    }
+  }
+}
+
+@mixin iconPreset($width, $height, $color, $opacity) {
+  width: $width;
+  height: $height;
+  color: $color;
+  opacity: $opacity;
+
+  path {
+    width: 100%;
+    height: 100%;
+  }
+}
